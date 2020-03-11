@@ -1,0 +1,111 @@
+body::-webkit-scrollbar {
+    width: 0.5vw;
+    position: fixed;
+    transition: all 0.4s
+}
+
+body::-webkit-scrollbar:hover{
+    width: 1;
+}
+
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(102, 0, 52,0.75);
+    outline: 1px solid rgba(153, 51, 103);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    --main-accent-colour: rgba(102, 0, 52);
+}
+
+html {
+    background: rgba(204, 153, 102, 0.842);
+    overflow-x: hidden;
+}
+
+
+#brackets {
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+    color: rgba(102, 0, 52, 0.842);
+}
+#speciale {
+    font-size: 4em;
+    color: rgba(204, 153, 102, 0.842);
+}
+#front-wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(102, 51, 102);
+}
+#front-content {
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transform: translate(0,-20%);
+
+}
+
+#program {
+    font-size: 2.5em;
+    color: rgba(204, 153, 102, 0.842);
+    padding-top: 0.5em;
+    text-align: center;
+
+}
+
+#front-menu-items {
+    
+    color: rgba(204, 153, 102, 0.842);
+    text-decoration: underline;
+    text-decoration-color: rgba(102, 0, 52, 0.842);
+    font-size: 1.5em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding-right: 4%;
+    padding-left: 4%;
+    text-align: center;
+    white-space: nowrap;
+
+
+}
+
+#front-menu-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 5em;
+    width: 95vw;
+    transition: all 0.4s
+
+
+}
+
+#title {
+    padding-top: 1em;
+}
+
+#front-menu-container :hover {  
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+footer{
+    clear:both; 
+}
